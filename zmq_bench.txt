@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+Task b1ec9f8f-4002-4c9b-81e9-1201229f8a0e: finished
+--------------------------------------------------------------------------------
+
+test scenario RabbitScenario.send_messages
+args position 0
+args values:
+{
+  "runner": {
+    "type": "constant", 
+    "concurrency": 40, 
+    "times": 100
+  }, 
+  "args": {
+    "num_messages": 100
+  }, 
+  "context": {
+    "oslomsg": {
+      "msg_length_file": "messages_length.yaml", 
+      "config_opts": {
+        "DEFAULT": {
+          "rpc_zmq_matchmaker": "redis", 
+          "rpc_zmq_ipc_dir": "/var/run/openstack", 
+          "zmq_use_broker": 0
+        }, 
+        "matchmaker_redis": {
+          "host": "127.0.0.1", 
+          "port": "6379"
+        }
+      }, 
+      "num_servers": 10, 
+      "num_topics": 5, 
+      "num_clients": 10
+    }
+  }
+}
++-----------------------------------------------------------------------------+
+|                            Response Times (sec)                             |
++--------+-------+--------+--------+--------+-------+-------+---------+-------+
+| action | min   | median | 90%ile | 95%ile | max   | avg   | success | count |
++--------+-------+--------+--------+--------+-------+-------+---------+-------+
+| total  | 2.541 | 5.778  | 7.182  | 7.241  | 7.807 | 5.832 | 100.0%  | 100   |
++--------+-------+--------+--------+--------+-------+-------+---------+-------+
+Load duration: 16.8056619167
+Full duration: 16.9445209503

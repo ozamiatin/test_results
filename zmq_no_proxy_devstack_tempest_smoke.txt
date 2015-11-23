@@ -1,0 +1,39 @@
+======
+Totals
+======
+Ran: 78 tests in 303.0000 sec.
+ - Passed: 33
+ - Skipped: 39
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 6
+Sum of execute time for each test: 306.1571 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (18 tests) => 0:04:55.800055
+ - Worker 1 (20 tests) => 0:00:06.623678
+ - Worker 2 (18 tests) => 0:00:41.674014
+ - Worker 3 (22 tests) => 0:01:10.654353
+
+Slowest Tests:
+
+Test id                                                                                                                                                                           Runtime (s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -----------
+tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_volume_boot_pattern[compute,id-557cd2c2-4eb8-4dce-98be-f86765ff311b,image,smoke,volume]                      116.526
+tempest.scenario.test_volume_boot_pattern.TestVolumeBootPatternV2.test_volume_boot_pattern[compute,id-557cd2c2-4eb8-4dce-98be-f86765ff311b,image,smoke,volume]                    115.187
+tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basicops[compute,id-7fff3fb3-91d8-4fd0-bd7d-0204f1f180ba,network,smoke]                                      15.695
+tempest.api.volume.test_volumes_get.VolumesV1GetTest.test_volume_create_get_update_delete[id-27fb0e9f-fb64-41dd-8bdb-1ffa762f0d51,smoke]                                           15.517
+tempest.api.volume.test_volumes_get.VolumesV1GetTest.test_volume_create_get_update_delete_from_image[id-54a01030-c7fc-447c-86ee-c1182beae638,image,smoke]                          14.370
+tempest.scenario.test_server_multinode.TestServerMultinode.test_schedule_to_all_nodes[compute,id-9cecbe35-b9d4-48da-a37e-7ce70aa43d30,network,smoke]                               10.819
+tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_reboot_server_hard[id-2cb1baf6-ac8d-4429-bf0d-ba8a0ba53e32,smoke]                                        9.017
+tempest.api.volume.test_volumes_actions.VolumesV1ActionsTest.test_attach_detach_volume_to_instance[compute,id-fff42874-7db5-4487-a8e1-ddda5fb5288d,smoke,stress]                    1.775
+tempest.api.volume.test_volumes_actions.VolumesV2ActionsTest.test_attach_detach_volume_to_instance[compute,id-fff42874-7db5-4487-a8e1-ddda5fb5288d,smoke,stress]                    1.376
+tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create[id-850795d7-d4d3-4e55-b527-a774c0123d3a,network,smoke]    0.947
+ERROR: InvocationError: '/bin/bash tools/pretty_tox.sh \\[.*\\bsmoke\\b.*\\] '
+__________________________________________________________________________________________________ summary __________________________________________________________________________________________________
+ERROR:   smoke: commands failed
+bash failed
+Error on exit
+World dumping... see /opt/stack/logs/worlddump-2015-11-23-120507.txt for details

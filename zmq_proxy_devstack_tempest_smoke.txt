@@ -1,0 +1,36 @@
+======
+Totals
+======
+Ran: 84 tests in 224.0000 sec.
+ - Passed: 45
+ - Skipped: 39
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 378.0906 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (25 tests) => 0:01:02.297607
+ - Worker 1 (21 tests) => 0:03:14.820425
+ - Worker 2 (20 tests) => 0:01:11.046391
+ - Worker 3 (18 tests) => 0:03:17.380106
+
+Slowest Tests:
+
+Test id                                                                                                                                                           Runtime (s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----------
+tempest.scenario.test_volume_boot_pattern.TestVolumeBootPatternV2.test_volume_boot_pattern[compute,id-557cd2c2-4eb8-4dce-98be-f86765ff311b,image,smoke,volume]    139.418
+tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_volume_boot_pattern[compute,id-557cd2c2-4eb8-4dce-98be-f86765ff311b,image,smoke,volume]      126.134
+tempest.api.volume.test_volumes_get.VolumesV1GetTest.test_volume_create_get_update_delete_from_image[id-54a01030-c7fc-447c-86ee-c1182beae638,image,smoke]          21.355
+tempest.api.volume.test_volumes_get.VolumesV2GetTest.test_volume_create_get_update_delete_from_image[id-54a01030-c7fc-447c-86ee-c1182beae638,image,smoke]          17.505
+tempest.api.volume.test_volumes_get.VolumesV1GetTest.test_volume_create_get_update_delete[id-27fb0e9f-fb64-41dd-8bdb-1ffa762f0d51,smoke]                           15.295
+tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basicops[compute,id-7fff3fb3-91d8-4fd0-bd7d-0204f1f180ba,network,smoke]                      15.218
+tempest.api.volume.test_volumes_get.VolumesV2GetTest.test_volume_create_get_update_delete[id-27fb0e9f-fb64-41dd-8bdb-1ffa762f0d51,smoke]                           15.049
+tempest.scenario.test_server_multinode.TestServerMultinode.test_schedule_to_all_nodes[compute,id-9cecbe35-b9d4-48da-a37e-7ce70aa43d30,network,smoke]               10.324
+tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_reboot_server_hard[id-2cb1baf6-ac8d-4429-bf0d-ba8a0ba53e32,smoke]                        6.150
+tempest.api.volume.test_volumes_actions.VolumesV1ActionsTest.test_attach_detach_volume_to_instance[compute,id-fff42874-7db5-4487-a8e1-ddda5fb5288d,smoke,stress]    2.992
+__________________________________________________________________________________________________ summary __________________________________________________________________________________________________
+  smoke: commands succeeded
+  congratulations :)
